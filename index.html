@@ -5,14 +5,9 @@
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded arjs>
     <!-- create your content here. just a box for now -->
-    <!-- define your gltf asset -->
-<a-assets>
-  <a-asset-item id="busterDrone" src="data/images/busterDrone.gltf"></a-asset-item>
-</a-assets>
-<!-- use your gltf model -->
-<a-entity gltf-model="##busterDrone"></a-entity>
+   <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
     <!-- define a camera which will move according to the marker position -->
-    <a-marker-camera preset='hiro'></a-marker-camera>
+    <a-marker-camera type='pattern' url='data/images/ARjs.patt'></a-marker-camera>
 
   </a-scene>
 </body>
