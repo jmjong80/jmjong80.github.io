@@ -3,20 +3,9 @@
 <!-- include ar.js for A-Frame -->
 <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 <body style='margin : 0px; overflow: hidden;'>
-  <a-scene embedded arjs='trackingMethod: best;'>
-    <a-anchor hit-testing-enabled='true'>
-      <a-gltf-model src="data/images/busterDrone.gltf" scale="0.10 0.10 0.10"></a-gltf-model>
-           <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
-      </a-anchor>
-    <!-- create your content here. just a box for now -->
-    <!-- <a-asset-item id="busterDrone" src="data/images/busterDrone.gltf"></a-asset-item>
-</a-assets>
-<!-- use your gltf model -->
-<!-- <a-entity gltf-model="busterDrone"></a-entity> 
-<a-entity gltf-model="##busterDrone"></a-entity> -->
-    
-   <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
-
+  <a-scene embedded arjs>
+    <a-text position='0 0.5 0' value="Hello, World!"></a-text>
+   
     <!-- define a camera which will move according to the marker position -->
     <a-marker-camera type='pattern' url='data/images/ARjs.patt'></a-marker-camera>
 
