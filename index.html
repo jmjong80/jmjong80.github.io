@@ -6,9 +6,10 @@
 
   <body style='margin : 0px; overflow: hidden;'>
                                                                                                   
-  <a-scene embedded arjs='sourceType: webcam;'>
+  <a-scene embedded arjs='trackingMethod: best;'>
+  <a-anchor hit-testing-enabled='true'>
                                                                                                   
-<a-marker preset='hiro'>
+<!-- <a-marker preset='hiro'> -->
                            
   <!-- <a-text value="Hello, World!"></a-text>
      <a-image src="data/images/Peperoni-Logo.png"></a-image> 
@@ -19,10 +20,13 @@
 <a-entity gltf-model="##tree"></a-entity> -->
   
   <a-entity 
-gltf-model-next="src: url(data/images/scene.gltf)”>
+            position="0.5 -2.0 -0.5"
+            scale="0.1 0.1 0.1"
+            gltf-model-next="src: url(data/images/scene.gltf)”>
 </a-entity>
-    </a-marker>
+<!-- </a-marker> -->
 
-    <a-entity camera></a-entity>
+   </a-anchor>
+   <a-camera-static/>
   </a-scene>
 </body>
