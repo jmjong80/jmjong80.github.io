@@ -11,7 +11,11 @@
                            
   <!-- <a-text value="Hello, World!"></a-text>
      <a-image src="data/images/Peperoni-Logo.png"></a-image> -->
-     
+     <a-assets>
+  <a-asset-item id="tree" src="data/images/scene.gltf"></a-asset-item>
+</a-assets>
+<!-- use your gltf model -->
+<a-entity gltf-model="##tree"></a-entity>
     </a-marker>
 
     <a-entity camera></a-entity>
