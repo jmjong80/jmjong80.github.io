@@ -4,18 +4,17 @@
 <script src="build/aframe-ar.js"></script>
 
 <body style='margin : 0px; overflow: hidden;'>
-  <a-scene embedded arjs='sourceType: webcam;'>
+  <a-scene stats embedded arjs='sourceType: webcam;'>
  
-    <a-marker preset='hiro'>
       <!--Adding a glTF 2.0 model to your scene-->
       <a-entity
                 scale="0.10 0.10 0.10"
-                gltf-model-next="src: url(models/busterDrone.gltf);"
+                gltf-model="url(models/busterDrone.gltf)"
       >
       </a-entity>
       
     </a-marker>
 
-    <a-entity camera></a-entity>
+   <a-marker-camera preset='hiro'></a-marker-camera>
   </a-scene>
 </body>
