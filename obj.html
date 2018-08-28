@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-<script src=”https://aframe.io/releases/0.8.0/aframe.min.js"></script>
-                                                            
+<script src=”https://aframe.io/releases/0.8.0/aframe.min.js"></script>                                                            
 <script src=”https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 
   <a-scene embedded arjs=’trackingMethod: best;’>
+    <a-anchor hit-testing-enabled='true'>
       <a-marker preset=’hiro’>
         <!-- Adding an OBJ file to an AR Project-->
         <a-entity 
@@ -13,9 +13,10 @@
             obj-model=”obj: url(models/man.obj)";> 
            
         </a-entity>
-              
-      </a-marker>
-  <a-entity camera></a-entity>
+  </a-marker>
+    </a-anchor>          
+     
+  <a-camera-static/>
   </a-scene>
                                                 
   </html>
