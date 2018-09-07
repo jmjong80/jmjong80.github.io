@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+<script src="build/aframe-ar.js"></script>
+                                                        
+<body style='margin : 0px; overflow: hidden;'>
+        <a-scene stats embedded arjs='sourceType: webcam;'>
+          
+		<a-entity 
+                          scale="1 1 1"
+                          rotation="90 0 0"
+			  position="0 0.5 0"
+			  color=#ff0000
+                          obj-model="obj: url(models/obj/105667.obj);">
+		<a-animation attribute="rotation" to="0 0 360" dur="2000" repeat="indefinite"></a-animation>
+		</a-entity>
+		
+          <a-marker-camera type='pattern' url='markers/logo3.patt'></a-marker-camera>
+        </a-scene>
+</body>
+</html>
