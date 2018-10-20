@@ -4,13 +4,13 @@
 <script src="build/aframe-ar.js"></script>
                                                         
 <body style='margin : 0px; overflow: hidden;'>
-        <a-scene stats embedded arjs='sourceType: webcam;'>
+        <a-scene embedded arjs='sourceType: webcam;'>
           
 		<a-entity 
-                          
-			  position="0 0 -5"
+                          scale="1 1 1"
+			 
 			
-                 <a-entity obj-model="obj: url(models/obj/untitled.obj);" rotation="90 0 0" scale="2 2 2">
+                 <a-entity obj-model="obj: url(models/obj/untitled.obj);" rotation="90 0 0" scale="2 2 2" position="0 0 -5">
 		</a-entity>
 	<!-- <a-animation attribute="rotation" to="180 0 360" dur="2000" repeat="indefinite"></a-animation> -->
 		</a-entity>
